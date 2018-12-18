@@ -20,10 +20,20 @@
 
 (define (pow b n)
   'YOUR-CODE-HERE
+  (cond 
+    ((= 1 n) b) 
+    ((= 0 n) 1) 
+    ((= 2 n) (square b)) 
+    ((even? n) (square (pow b (/ n 2))))
+    (else (* b (pow b (- n 1))))
+  )
 )
 
 (define (ordered? s)
-  'YOUR-CODE-HERE
+    (cond 
+      ((or (null? s) (null? (cdr s))) true)
+      (else (and (<= (car s) (cadr s)) (ordered? (cdr s))))
+    )
 )
 
 (define (empty? s) (null? s))
