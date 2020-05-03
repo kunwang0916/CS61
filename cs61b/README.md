@@ -7,4 +7,4 @@ code or related files for the CS61B. based on [Data Structures, Spring 2019, Ins
 you can download skeleton files from [here](https://github.com/Berkeley-CS61B/skeleton-sp19).
 
 # current stage
-https://joshhug.gitbooks.io/hug61b/content/chap1/chap12.html
+https://joshhug.gitbooks.io/hug61b/content/chap2/chap22.html
