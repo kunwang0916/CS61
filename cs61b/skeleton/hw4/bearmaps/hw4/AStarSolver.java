@@ -47,6 +47,9 @@ public class AStarSolver<Vertex> implements ShortestPathsSolver<Vertex> {
                 // relax
                 Vertex p = e.from();
                 Vertex q = e.to();
+                if (visited.contains(q)) {
+                    continue;
+                }
                 double w = e.weight();
                 double distToQ = distanceMap.getOrDefault(q, Double.MAX_VALUE);
                 double distToP = distanceMap.get(p);
